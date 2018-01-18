@@ -1,0 +1,35 @@
+/** GENERAL STYLES **/
+html, body {height: 100%; width: 100%;}
+body {background: white;color: black;}
+/*body * {font-family: 'Oxygen', sans-serif;}*/
+.block {height: 100%;}
+
+.flex_box, .flex_box_column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex_box {flex-flow: row wrap;}
+.flex_box_column {flex-flow: column wrap;}
+.flex_1 {flex: 1;}
+.flex_2 {flex: 2;}
+.flex_3 {flex: 3;}
+.flex_4 {flex: 4;}
+.full_screen, main {min-height: 100%; height: 100%;width: 100%; max-height: 100%;max-width: 100%;}
+.half_screen {max-height: 80%; height: 50%;width: 100%;}/* More Leg Room for work */
+.full_width {width: 100%;height: auto;}
+.half_width {width: 50%; height: auto;}
+.half_height{height: 80vh;}
+.centered {margin: auto;}
+.overlay {background-color: rgba(0, 0, 0, 0.6);}
+
+/** USER ACCESS VIEW STYLES **/
+.welcome_view {
+    background: transparent url("../img/kcLogo.png") center center fixed no-repeat;
+    background-size: contain;
+}
+
+/** MAIN MENU CARDS **/
+.menu_row {height: 30.33%;}
+.menu_row .card {height: 100%;}
+span.card-title.activator {background-color: rgba(0,0,0,.7);}

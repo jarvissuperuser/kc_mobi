@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!--<link rel="stylesheet" href="css/w3.css">-->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">-->
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/themeColors.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Kasi-Care</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar-fixed">
+                <nav class="w3-theme">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo">Kasi+Care</a>
+                        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                    </div>
+                </nav>
+            </div>
+            <ul id="slide-out" class="side-nav">
+                <li><div class="user-view ">
+                    <div class="background">
+                        <img src="img/bgx.png" class="responsive-img">
+                    </div>
+	                  <a href="#main_view"><img class="circle" src="img/kcLogo.png"></a>
+	                  <div class="hide">
+                    <a href="#user_view"><span class="white-text name">John Doe</span></a>
+                    <a href="#user_view"><span class="white-text email">jdandturk@gmail.com</span></a>
+	                  </div>
+                </div></li>
+                <li><a href="#main_view"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+	              <li><a href="#welcome_view"><i class="material-icons">home</i>Back</a></li>
+                <li><a href="#welcome_view">Second Link</a></li>
+                <li><div class="divider"></div></li>
+                <li><a class="subheader">Subheader</a></li>
+                <li><a class="waves-effect" href="#search_view">Third Link With Waves</a></li>
+            </ul>
+        </header>
+        <main class="w3-theme-accent">
+            <!-- MAIN MENU VIEW -->
+            <div class="full_screen hide main_view">
+                <div class="row">
+                    <div class="menu_row col s6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/bgx.png">
+                                <span class="card-title activator full_width">Book</span>
+                            </div>
+                            <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                <p class="black-text">Make a Booking at a preiviously visited
+                                Institution</p><button class="btn center">Go</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_row col s6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/bgx.png">
+                                <span class="card-title activator full_width">Search</span>
+                            </div>
+                            <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                <p class="black-text">Here is some more information about this product
+                                    that is only revealed once clicked on.</p>
+	                            <button class="btn center">Go</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="menu_row col s6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+
+                                <img class="activator" src="img/bgx.png">
+                                <span class="card-title activator full_width">Profiles</span>
+
+                            </div>
+                            <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                <p class="black-text">Here is some more information about this product
+                                    that is only revealed once clicked on.</p>
+	                            <button class="btn center">Go</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_row col s6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+
+                                <img class="activator" src="img/bgx.png">
+                                <span class="card-title activator full_width">FAQs</span>
+
+                            </div>
+                            <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">
+	                                    <i class="material-icons right">close</i>
+                                    </span>
+                                <p class="black-text">Here is some more information about this product
+                                    that is only revealed once clicked on.</p>
+	                            <button class="btn center">Go</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="menu_row col s6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/bgx.png">
+                                <span class="card-title activator full_width">Health</span>
+                            </div>
+                            <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                <p class="black-text">Here is some more information about this product
+                                    that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_row col s6">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/bgx.png">
+                                <span class="card-title activator full_width">menu 6</span>
+                            </div>
+                            <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">
+                                        <i class="material-icons right">close</i>
+                                    </span>
+                                <p class="black-text">Here is some more information about this product
+                                    that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- USER ACCESS VIEW -->
+            <div class="welcome_view full_screen ">
+                <div class="half_screen full_width half_height flex_box_column overlay subview">
+                    <div class="flex_3 flex_box">
+                        <p class="center-align white-text centered large">
+                            Welcome to Kasicare, <br>
+                            a platform designed to make you and your health best buddies again! <br>
+                        </p>
+                    </div>
+                    <div class="flex_1 flex_box">
+                        <a  class="btn inline signin">Sign-in</a>
+                        <br>
+                        <a  class="btn inline signup">Sign-up</a>
+                    </div>
+                </div>
+
+                <div class="hide user_access subview">
+                    <div class="row">
+                        <form id="login" class="col s12 section">
+                            <h1>Sign-in</h1>
+                            <div class="row">
+                                <div class="input-field col s12 m6">
+                                    <input id="username" type="text" class="validate">
+                                    <label for="username">Username</label>
+                                </div>
+                                <div class="input-field col s12 m6">
+                                    <input id="password" type="password" class="validate">
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Sign-in</button>
+	                        or <button class="btn" onclick="app_events.show_signup()">Sign-Up Here</button>
+                        </form>
+                        <form id="register" class="col s12 section">
+                            <h1>Sign-up</h1>
+                            <div class="row">
+                                <div class="input-field col s12 m6">
+                                    <input id="newFirstName" type="text" class="validate">
+                                    <label for="newFirstName">First Name</label>
+                                </div>
+                                <div class="input-field col s12 m6">
+                                    <input id="newLastName" type="text" class="validate">
+                                    <label for="newLastName">Last name</label>
+                                </div>
+                                <div class="input-field col s12 m6">
+                                    <input id="newUsername" type="text" class="validate">
+                                    <label for="newUsername">Username</label>
+                                </div>
+                                <div class="input-field col s12 m6">
+                                    <input id="newEmail" type="email" class="validate">
+                                    <label for="newEmail">E-mail</label>
+                                </div>
+                                <div class="input-field col s12 m6">
+                                    <input id="newPassword" type="password" class="validate">
+                                    <label for="newPassword">Password</label>
+                                </div>
+                                <div class="input-field col s12 m6">
+                                    <input id="newPasswordRe" type="password" class="validate">
+                                    <label for="newPasswordRe">re-Enter Password</label>
+                                </div>
+                            </div>
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Sign up</button>
+	                        or <button class="btn" onclick="app_events.show_signin()">Sign-In Here</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEARCH VIEW -->
+            <div class="full_screen white hide">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">Search for</label>
+                            </div>
+                            <div class="col s12">
+                                <button class="btn waves-effect waves-light" type="submit" name="action">search
+                                    <i class="material-icons right">search</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12"></div>
+                </div>
+            </div>
+
+            <!--<div class="fixed-action-btn horizontal hide-on-med-and-up">
+                <a class="btn-floating btn-large w3-accent-theme-action">
+                    <i class="large material-icons">arrow_downward</i>
+                </a>
+                <ul>
+                    <li><a href="#top" class="btn-floating w3-accent-theme-l1">
+                        <i class="material-icons">vertical_align_top</i></a></li>
+                    <li><a href="#top" class="btn-floating w3-accent-theme">
+                        <i class="material-icons">vertical_align_bottom</i></a></li>
+                    <li><a href="#top" class="btn-floating w3-accent-theme-d1">
+                        <i class="material-icons">arrow_upward</i></a></li>
+                    <li><a href="#top" class="btn-floating w3-accent-theme-d2">
+                        <i class="material-icons">arrow_downward</i></a></li>
+                </ul>
+            </div>-->
+        </main>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/views.js"></script>
+    </body>
+</html>
